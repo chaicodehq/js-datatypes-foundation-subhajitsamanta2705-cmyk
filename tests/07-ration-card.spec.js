@@ -108,7 +108,7 @@ describe('07 - Ration Card Registry: Object Basics (9 pts)', () => {
     });
 
     test('returns false for non-string cardId', () => {
-      expect(removeRationCard(registry, 123)).toBe(false);
+      expect(removeRationCard('registry', 123)).toBe(false);
     });
 
     test('registry has fewer keys after removal', () => {
